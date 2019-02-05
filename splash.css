@@ -1,0 +1,15 @@
+#splash {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25) ), url(http://www.gratefulweb.com/sites/default/files/inline-images/_DSC5134.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  color: #FFF;
+}
+
+#splash h2 {
+  color: #FFF;
+  font-size: 3rem;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
