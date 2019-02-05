@@ -6,6 +6,8 @@
   background-position: center;
 
   color: #FFF;
+
+  display: none;
 }
 
 #splash h2 {
