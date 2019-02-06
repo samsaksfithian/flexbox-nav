@@ -13,7 +13,19 @@ header {
 	background: linear-gradient(90deg, rgb(70, 35, 74) 0%, rgb(113, 19, 167) 100%);
 
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
 
+/* @media all and (min-width: 650px) {
+	header {
+		height: 8rem;
+	}
+} */
+
+nav, nav ul, nav ul li, nav ul li a {
+	height: 100%;
 }
 
 nav ul {
@@ -21,6 +33,34 @@ nav ul {
 	list-style: none;
 }
 
+nav ul li {
+	position: relative;
+	background-color: rgba(146, 71, 165, 0.5);
+	transition: all 450ms;
+}
+
+nav ul li a {
+	color: #FFF;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	padding: 0px 10px;
+}
+
+nav ul li:hover {
+	background-color: rgba(146, 71, 165, 0.9);
+}
+
+nav ul li:hover .submenu {
+	display: flex;
+}
+
 .submenu {
 	display: none;
+	position: absolute;
+	flex-direction: column;
+}
+
+.submenu li {
+	padding: 8px 2px;
 }
